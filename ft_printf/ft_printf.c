@@ -56,7 +56,7 @@ int	ft_printf(const char *s, ...)
 		}
 		else
 			count += ft_putchar(*s);
-		s++;
+		(*s && s++);
 	}
 	va_end(args);
 	return (count);
